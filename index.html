@@ -1,24 +1,23 @@
 <html>
   <head>
     <script type="text/javascript">
+      // Preload
+      var imgs = [];
       for (var n of ["b", "y"]) {
         for (var f of [4, 6, 8, 10, 12, 20]) {
           for (var i = 1; i <= f; i++) {
             var img = new Image();
             img.src = f + n + "_" + i + ".png";
+            imgs.push(img);
           }
         }
       }
       function place(n, f) {
         var b = document.getElementById('left1');
-        if (document.getElementById("left2").classList.contains("select")) {
-          b = document.getElementById('left2');
-        }
-        if (document.getElementById("left3").classList.contains("select")) {
-          b = document.getElementById('left3');
-        }
-        if (document.getElementById("left4").classList.contains("select")) {
-          b = document.getElementById('left4');
+        for (var i = 2; i <= 4; i++) {
+          if (document.getElementById("left" + i).classList.contains("select")) {
+            b = document.getElementById("left" + i);
+          }
         }
         var e = document.createElement("img");
         e.setAttribute("src", n + f + "_1.png");
@@ -47,8 +46,8 @@
             var n = dice[i].getAttribute("n");
             var r = Math.floor(Math.random() * f) + 1;
             dice[i].setAttribute("src", n  + f + "_" + r + ".png");
-	  }
-	}
+          }
+        }
       }
     </script>
     <style>
@@ -69,20 +68,20 @@
   <table class="outer">
     <tr>
       <td>
-	<table>
-	  <tr>
-	    <td class="inner" onclick="roll('left1')" id="left1">
-	    </td>
-	    <td class="inner" onclick="roll('left2')" id="left2">
-	    </td>
-	  </tr>
-	  <tr>
-	    <td class="inner" onclick="roll('left3')" id="left3">
-	    </td>
-	    <td class="inner" onclick="roll('left4')" id="left4">
-	    </td>
-	  </tr>
-	</table>
+        <table>
+          <tr>
+            <td class="inner" onclick="roll('left1')" id="left1">
+            </td>
+            <td class="inner" onclick="roll('left2')" id="left2">
+            </td>
+          </tr>
+          <tr>
+            <td class="inner" onclick="roll('left3')" id="left3">
+            </td>
+            <td class="inner" onclick="roll('left4')" id="left4">
+            </td>
+          </tr>
+        </table>
       </td>
       <td class="right">
         <img class="right" src="b12_1.png" onclick="place('b','12')"/>
