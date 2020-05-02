@@ -1,6 +1,14 @@
 <html>
   <head>
     <script type="text/javascript">
+      for (var n of ["b", "y"]) {
+        for (var f of [4, 6, 8, 10, 12, 20]) {
+          for (var i = 1; i <= f; i++) {
+            var img = new Image();
+            img.src = f + n + "_" + i + ".png";
+          }
+        }
+      }
       function place(n, f) {
         var b = document.getElementById('left1');
         if (document.getElementById("left2").classList.contains("select")) {
@@ -27,10 +35,9 @@
       function roll(id) {
         var el = document.getElementById(id);
         if (!el.classList.contains("select")) {
-          document.getElementById("left1").classList.remove("select");
-          document.getElementById("left2").classList.remove("select");
-          document.getElementById("left3").classList.remove("select");
-          document.getElementById("left4").classList.remove("select");
+          for (var i = 1; i <= 4; i++) {
+            document.getElementById("left" + i).classList.remove("select");
+          }
           el.classList.add("select");
         }
         else {
