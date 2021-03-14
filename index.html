@@ -60,22 +60,10 @@
             var n = dice[i].getAttribute("n");
             var r = 1;
             if (f === "11") {
-              while (r < 48) {
-                if (Math.floor(Math.random() * 10) < 2) {
-                  break;
-                }
-                r++;
-              }
+              r = p5();
             }
             else if (f === "13") {
-              r = 0;
-              var s = Math.sign(Math.random() - .5);
-              while (Math.abs(r) < 10) {
-                if (Math.floor(Math.random() * 10) < 2) {
-                  break;
-                }
-                r += s;
-              }
+              r = p5() - p5();
             }
             else {
               r = Math.floor(Math.random() * f) + 1;
@@ -83,6 +71,16 @@
             dice[i].setAttribute("src", n  + f + "_" + r + ".png");
           }
         }
+      }
+      function p5() {
+        var r = 1;
+        while (true) {
+          if (Math.floor(Math.random() * 10) < 2) {
+            break;
+          }
+          r++;
+        }
+        return r;
       }
     </script>
     <style>
