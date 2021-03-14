@@ -19,6 +19,13 @@
           imgs.push(img);
         }
       }
+      for (var n of ["b", "y"]) {
+        for (var i = -10; i <= 10; i++) {
+          var img = new Image();
+          img.src = f + "13_" + i + ".png";
+          imgs.push(img);
+        }
+      }
       function place(n, f) {
         var b = document.getElementById('left1');
         for (var i = 2; i <= 4; i++) {
@@ -58,6 +65,16 @@
                   break;
                 }
                 r++;
+              }
+            }
+            else if (f === "13") {
+              r = 0;
+              var s = Math.sign(Math.random() - .5);
+              while (Math.abs(r) <= 10) {
+                if (Math.floor(Math.random() * 10) < 2) {
+                  break;
+                }
+                r += s;
               }
             }
             else {
@@ -102,6 +119,8 @@
         </table>
       </td>
       <td class="right">
+        <img class="right" src="b13_0.png" onclick="place('b','13')"/>
+        <img class="right" src="y13_0.png" onclick="place('y','13')"/>
         <img class="right" src="b11_1.png" onclick="place('b','11')"/>
         <img class="right" src="y11_1.png" onclick="place('y','11')"/>
         <img class="right" src="b12_1.png" onclick="place('b','12')"/>
