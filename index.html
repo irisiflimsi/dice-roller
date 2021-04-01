@@ -20,7 +20,7 @@
         }
       }
       for (var n of ["b", "y"]) {
-        for (var i = -10; i <= 10; i++) {
+        for (var i = -35; i <= 35; i++) {
           var img = new Image();
           img.src = f + "13_" + i + ".png";
           imgs.push(img);
@@ -75,7 +75,7 @@
       function p5() {
         var r = 1;
         while (true) {
-          if (Math.floor(Math.random() * 10) < 2) {
+          if (Math.floor(Math.random() * 5) == 0) {
             break;
           }
           r++;
@@ -91,11 +91,11 @@
       table.outer { border-collapse: collapse; }
       td { border: 5px groove black; text-align: center; }
       td.select { border: 5px ridge black; text-align: center; }
-      img.right { display: inline-block; margin: 6%; }
-      img.left { display: inline-block; margin: 2%; }
+      img.right { display: inline-block; margin: 0px; padding: 5px; }
+      img.left { display: inline-block; margin: 0px; padding: 5px; }
       td.inner { width: 50%; height: 50%; background-image: url('left.jpg'); }
       td.left { width: 75%; background-image: url('left.jpg'); }
-      td.right { width: 25%; background-image: url('right.jpg'); }      
+      td.right { padding: 0px; margin: 0px; width: 300px; background-image: url('right.jpg'); }      
     </style>
   </head>
   <table class="outer">
@@ -121,6 +121,8 @@
         <img class="right" src="y13_0.png" onclick="place('y','13')"/>
         <img class="right" src="b11_1.png" onclick="place('b','11')"/>
         <img class="right" src="y11_1.png" onclick="place('y','11')"/>
+        <img class="right" src="b20_1.png" onclick="place('b','20')"/>
+        <img class="right" src="y20_1.png" onclick="place('y','20')"/>
         <img class="right" src="b12_1.png" onclick="place('b','12')"/>
         <img class="right" src="y12_1.png" onclick="place('y','12')"/>
         <img class="right" src="b10_1.png" onclick="place('b','10')"/>
