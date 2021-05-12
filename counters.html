@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      // Preload
+      var imgs = [];
+      var n = [ 0, 0, 0, 0 ];
+      var dd = [ 0, 0, 0, 0 ];
+      function count(c, i, d) {
+        n[i] += d ;
+        var e2 = document.getElementById(i + "100");
+        var d2 = Math.floor(n[i] / 100);
+        e2.setAttribute("src", c + "c_" + d2 + ".png");
+        var e1 = document.getElementById(i + "10");
+        var d1 = Math.floor(n[i] / 10) % 10;
+        e1.setAttribute("src", c + "c_" + d1 + ".png");
+        var e0 = document.getElementById(i + "1");
+        var d0 = Math.floor(n[i]) % 10;
+        e0.setAttribute("src", c + "c_" + d0 + ".png");
+      }
+      function count2(i) {
+        dd[i] = (dd[i] + 1) % 20;
+        var e2 = document.getElementById(i + "2");
+        e2.setAttribute("src", "y20_" + (dd[i] == 0 ? 'n' : dd[i]) + ".png");
+      }
+    </script>
+    <style>
+      html, body, table {
+        padding: 0px; margin: 0px;
+      }
+      body { user-select: none; background-image: url('left.jpg'); }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <img id="0100" src="bc_0.png" onclick="count('b',0,100)"/>
+        </td>
+        <td>
+          <img id="1100" src="yc_0.png" onclick="count('y',1,100)"/>
+        </td>
+        <td>
+          <img id="2100" src="yc_0.png" onclick="count('y',2,100)"/>
+        </td>
+        <td>
+          <img id="3100" src="yc_0.png" onclick="count('y',3,100)"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img id="010" src="bc_0.png" onclick="count('b',0,10)"/>
+        </td>
+        <td>
+          <img id="110" src="yc_0.png" onclick="count('y',1,10)"/>
+        </td>
+        <td>
+          <img id="210" src="yc_0.png" onclick="count('y',2,10)"/>
+        </td>
+        <td>
+          <img id="310" src="yc_0.png" onclick="count('y',3,10)"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img id="01" src="bc_0.png" onclick="count('b',0,1)"/>
+        </td>
+        <td>
+          <img id="11" src="yc_0.png" onclick="count('y',1,1)"/>
+        </td>
+        <td>
+          <img id="21" src="yc_0.png" onclick="count('y',2,1)"/>
+        </td>
+        <td>
+          <img id="31" src="yc_0.png" onclick="count('y',3,1)"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+          <img id="12" src="y20_n.png" onclick="count2(1)"/>
+        </td>
+        <td>
+          <img id="22" src="y20_n.png" onclick="count2(2)"/>
+        </td>
+        <td>
+          <img id="32" src="y20_n.png" onclick="count2(3)"/>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
