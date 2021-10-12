@@ -4,7 +4,7 @@
       // Preload
       var imgs = [];
       var n = [ 0, 0, 0, 0 ];
-      var dd = [ 0, 0, 0, 0 ];
+      var dd = [ 0, 0, 0, 0, 0 ];
       function count(c, i, d) {
         n[i] += d ;
         var e2 = document.getElementById(i + "100");
@@ -20,14 +20,15 @@
       function count2(i) {
         dd[i] = (dd[i] + 1) % 20;
         var e2 = document.getElementById(i + "2");
-        e2.setAttribute("src", "y20_" + (dd[i] == 0 ? 'n' : dd[i]) + ".png");
+        var c = i == 1 ? 'b' : 'y';
+        e2.setAttribute("src", "../flat/" + c + "20_" + (dd[i] == 0 ? 'n' : dd[i]) + ".png");
       }
     </script>
     <style>
       html, body, table {
         padding: 0px; margin: 0px;
       }
-      body { user-select: none; background-image: url('left.jpg'); }
+      body { user-select: none; background-image: url('../flat/left.jpg'); }
     </style>
   </head>
   <body>
@@ -75,16 +76,19 @@
         </td>
       </tr>
       <tr>
+      </tr>
+      <tr>
         <td>
+          <img id="12" src="../flat/b20_n.png" onclick="count2(1)"/>
         </td>
         <td>
-          <img id="12" src="y20_n.png" onclick="count2(1)"/>
+          <img id="22" src="../flat/y20_n.png" onclick="count2(2)"/>
         </td>
         <td>
-          <img id="22" src="y20_n.png" onclick="count2(2)"/>
+          <img id="32" src="../flat/y20_n.png" onclick="count2(3)"/>
         </td>
         <td>
-          <img id="32" src="y20_n.png" onclick="count2(3)"/>
+          <img id="42" src="../flat/y20_n.png" onclick="count2(4)"/>
         </td>
       </tr>
     </table>

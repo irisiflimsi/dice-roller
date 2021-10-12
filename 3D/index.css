@@ -1,0 +1,664 @@
+.fa1 {
+    background-image: url("d10_1.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(48deg)
+      rotateZ(0deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa2 {
+    background-image: url("d10_2.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(228deg)
+      rotateZ(-216deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa3 {
+    background-image: url("d10_3.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(48deg)
+      rotateZ(216deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa4 {
+    background-image: url("d10_4.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(228deg)
+      rotateZ(-72deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa5 {
+    background-image: url("d10_5.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(48deg)
+      rotateZ(144deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa6 {
+    background-image: url("d10_6.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(228deg)
+      rotateZ(-144deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa7 {
+    background-image: url("d10_7.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(48deg)
+      rotateZ(288deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa8 {
+    background-image: url("d10_8.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(228deg)
+      rotateZ(72deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa9 {
+    background-image: url("d10_9.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(48deg)
+      rotateZ(72deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.faa {
+    background-image: url("d10_10.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(228deg)
+      rotateZ(0deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+
+.fk1 {
+    background-image: url("dk1.png");
+    transform:
+      translate3d(150px,173px,0px)
+      translateZ(227px)
+      translateY(-43px) /* 130 - 87 */
+}
+.fk2 {
+    background-image: url("dk2.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(180deg)
+      rotateZ(120deg)
+      rotateX(138deg)
+      translateZ(-227px)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fk3 {
+    background-image: url("dk3.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(-144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fk4 {
+    background-image: url("dk4.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(180deg)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(-144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fk5 {
+    background-image: url("dk5.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateZ(-120deg)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(-120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fk6 {
+    background-image: url("dk6.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(180deg)
+      rotateZ(120deg)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(-120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fk7 {
+    background-image: url("dk7.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateZ(120deg)
+      rotateX(138deg)
+      translateZ(-227px)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fk8 {
+    background-image: url("dk8.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(180deg)
+      rotateX(138deg)
+      translateZ(-227px)
+      rotateY(180deg)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fk9 {
+    background-image: url("dk9.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateZ(120deg)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(-120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fka {
+    background-image: url("dka.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(180deg)
+      rotateZ(-120deg)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(-120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fkb {
+    background-image: url("dkb.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateZ(120deg)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(-144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fkc {
+    background-image: url("dkc.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(180deg)
+      rotateZ(-120deg)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(-144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fkd {
+    background-image: url("dkd.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(138deg)
+      translateZ(-227px)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fke {
+    background-image: url("dke.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(180deg)
+      rotateZ(-120deg)
+      rotateX(138deg)
+      translateZ(-227px)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fkf {
+    background-image: url("dkf.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateZ(-120deg)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(-144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fkg {
+    background-image: url("dkg.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(180deg)
+      rotateZ(120deg)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(-144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fkh {
+    background-image: url("dkh.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(-120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fki {
+    background-image: url("dki.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(180deg)
+      rotateX(37deg) /* 90 - 53; edge-part of 111 */
+      rotateZ(144deg)
+      rotateX(-37deg)
+      translateZ(227px)
+      rotateZ(-120deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fkj {
+    background-image: url("dkj.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateZ(-120deg)
+      rotateX(138deg)
+      translateZ(-227px)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.fkk {
+    background-image: url("dkk.png");
+    transform:
+      translate3d(150px,173px,0px)
+      rotateX(180deg)
+      translateZ(227px)
+      translateY(-43px) /* 130 - 87 */
+}
+
+.fc1 { /* side = 185.414 */
+    background-image: url("dc1.png");
+    transform:
+      translate3d(150px,158px,0px)
+      translateZ(207px)
+      translateY(-15px) /* 285/2 - 127.56 */
+}
+.fc2 {
+    background-image: url("dc2.png");
+    transform:
+      translate3d(150px,158px,0px)
+      translateZ(207px)
+      rotateZ(-72deg)
+      translateY(-15px) /* 285/2 - 127.56 */
+      translateY(142.5px)
+      rotateX(116.5deg)
+      translateY(-142.5px) /* 285/2 */
+      rotateY(180deg)
+}
+.fc3 {
+    background-image: url("dc3.png");
+    transform:
+      translate3d(150px,158px,0px)
+      rotateX(180deg)
+      translateZ(207px)
+      rotateZ(144deg)
+      translateY(-15px) /* 285/2 - 127.56 */
+      translateY(142.5px)
+      rotateX(116.5deg)
+      translateY(-142.5px) /* 285/2 */
+      rotateY(180deg)
+}
+.fc4 {
+    background-image: url("dc4.png");
+    transform:
+      translate3d(150px,158px,0px)
+      translateZ(207px)
+      translateY(-15px) /* 285/2 - 127.56 */
+      translateY(142.5px)
+      rotateX(116.5deg)
+      translateY(-142.5px) /* 285/2 */
+      rotateY(180deg)
+}
+.fc5 {
+    background-image: url("dc5.png");
+    transform:
+      translate3d(150px,158px,0px)
+      translateZ(207px)
+      rotateZ(144deg)
+      translateY(-15px) /* 285/2 - 127.56 */
+      translateY(142.5px)
+      rotateX(116.5deg)
+      translateY(-142.5px) /* 285/2 */
+      rotateY(180deg)
+}
+.fc6 {
+    background-image: url("dc6.png");
+    transform:
+      translate3d(150px,158px,0px)
+      translateZ(207px)
+      rotateZ(72deg)
+      translateY(-15px) /* 285/2 - 127.56 */
+      translateY(142.5px)
+      rotateX(116.5deg)
+      translateY(-142.5px) /* 285/2 */
+      rotateY(180deg)
+}
+.fc7 {
+    background-image: url("dc7.png");
+    transform:
+      translate3d(150px,158px,0px)
+      rotateX(180deg)
+      translateZ(207px)
+      rotateZ(-72deg)
+      translateY(-15px) /* 285/2 - 127.56 */
+      translateY(142.5px)
+      rotateX(116.5deg)
+      translateY(-142.5px) /* 285/2 */
+      rotateY(180deg)
+}
+.fc8 {
+    background-image: url("dc8.png");
+    transform:
+      translate3d(150px,158px,0px)
+      rotateX(180deg)
+      translateZ(207px)
+      rotateZ(-144deg)
+      translateY(-15px) /* 285/2 - 127.56 */
+      translateY(142.5px)
+      rotateX(116.5deg)
+      translateY(-142.5px) /* 285/2 */
+      rotateY(180deg)
+}
+.fc9 {
+    background-image: url("dc9.png");
+    transform:
+      translate3d(150px,158px,0px)
+      rotateX(180deg)
+      translateZ(207px)
+      translateY(-15px) /* 285/2 - 127.56 */
+      translateY(142.5px)
+      rotateX(116.5deg)
+      translateY(-142.5px) /* 285/2 */
+      rotateY(180deg)
+}
+.fca {
+    background-image: url("dca.png");
+    transform:
+      translate3d(150px,158px,0px)
+      translateZ(207px)
+      rotateZ(-144deg)
+      translateY(-15px) /* 285/2 - 127.56 */
+      translateY(142.5px)
+      rotateX(116.5deg)
+      translateY(-142.5px) /* 285/2 */
+      rotateY(180deg)
+}
+.fcb {
+    background-image: url("dcb.png");
+    transform:
+      translate3d(150px,158px,0px)
+      rotateX(180deg)
+      translateZ(207px)
+      rotateZ(72deg)
+      translateY(-15px) /* 285/2 - 127.56 */
+      translateY(142.5px)
+      rotateX(116.5deg)
+      translateY(-142.5px) /* 285/2 */
+      rotateY(180deg)
+}
+.fcc {
+    background-image: url("dcc.png");
+    transform:
+      translate3d(150px,158px,0px)
+      rotateX(180deg)
+      translateZ(207px)
+      translateY(-15px) /* 285/2 - 127.56 */
+}
+
+.f81 {
+    background-image: url("d81.png");
+    transform:
+      translate3d(150px,174px,0px)
+      translateZ(122px)
+      translateY(-43px) /* 130 - 87 */
+}
+.f82 {
+    background-image: url("d82.png");
+    transform:
+      translate3d(150px,174px,0px)
+      rotateX(180deg)
+      rotateZ(120deg)
+      rotateX(109.5deg)
+      translateZ(-122px)
+      rotateZ(-120deg)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.f83 {
+    background-image: url("d83.png");
+    transform:
+      translate3d(150px,174px,0px)
+      rotateZ(120deg)
+      rotateX(109.5deg)
+      translateZ(-122px)
+      rotateZ(-120deg)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.f84 {
+    background-image: url("d84.png");
+    transform:
+      translate3d(150px,174px,0px)
+      rotateX(109.5deg)
+      translateZ(-122px)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.f85 {
+    background-image: url("d85.png");
+    transform:
+      translate3d(150px,174px,0px)
+      rotateX(180deg)
+      rotateX(109.5deg)
+      translateZ(-122px)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.f86 {
+    background-image: url("d86.png");
+    transform:
+      translate3d(150px,174px,0px)
+      rotateX(180deg)
+      rotateZ(-120deg)
+      rotateX(109.5deg)
+      translateZ(-122px)
+      rotateZ(120deg)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.f87 {
+    background-image: url("d87.png");
+    transform:
+      translate3d(150px,174px,0px)
+      rotateZ(-120deg)
+      rotateX(109.5deg)
+      translateZ(-122px)
+      rotateZ(120deg)
+      rotateY(180deg)
+      translateY(-43px) /* 130 - 87 */
+}
+.f88 {
+    background-image: url("d88.png");
+    transform:
+      translate3d(150px,174px,0px)
+      rotateX(180deg)
+      translateZ(122px)
+      translateY(-43px) /* 130 - 87 */
+
+}
+
+.f61 {
+    background-image: url("d61.png");
+    transform:
+      translate3d(150px,150px,0px)
+      translateZ(150px);
+}
+.f62 {
+    background-image: url("d62.png");
+    transform:
+      translate3d(150px,150px,0px)
+      rotateX(-90deg)
+      translateZ(150px);
+}
+.f63 {
+    background-image: url("d63.png");
+    transform:
+      translate3d(150px,150px,0px)
+      rotateY(90deg)
+      translateZ(150px)
+}
+.f64 {
+    background-image: url("d64.png");
+    transform:
+      translate3d(150px,150px,0px)
+      rotateY(-90deg)
+      translateZ(150px)
+}
+.f65 {
+    background-image: url("d65.png");
+    transform:
+      translate3d(150px,150px,0px)
+      rotateX(90deg)
+      translateZ(150px);
+}
+.f66 {
+    background-image: url("d66.png");
+    transform:
+      translate3d(150px,150px,0px)
+      translateZ(-150px)
+      rotateY(180deg)
+}
+
+.f41 {
+    background-image: url("d41.png");
+    transform:
+      translate3d(150px, 174px, 0px)
+      translateZ(-61px)
+      rotateY(180deg)
+      translateY(-44px) /* 130 - 86 */
+}
+.f42 {
+    background-image: url("d42.png");
+    transform:
+      translate3d(150px,174px,0px)
+      translateZ(-61px)
+      rotateZ(-60deg)
+      translateY(-86px)
+      rotateX(70.5deg)
+      translateY(130px)
+      rotateZ(180deg)
+}
+.f43 {
+    background-image: url("d43.png");
+    transform:
+      translate3d(150px,174px,0px)
+      translateZ(-61px)
+      rotateZ(60deg)
+      translateY(-86px)
+      rotateX(70.5deg)
+      translateY(130px)
+      rotateZ(180deg)
+}
+.f44 {
+    background-image: url("d44.png");
+    transform:
+      translate3d(150px,174px,0px)
+      translateZ(-61px)
+      rotateZ(180deg)
+      translateY(-86px)
+      rotateX(70.5deg)
+      translateY(130px)
+      rotateZ(180deg)
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    float: left;
+}
+
+.d4,.d6,.d8,.da,.dc,.dk {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin: 0px;
+}
+
+.d4 div, .d8 div, .dk div {
+    position: absolute;
+    width: 300px;
+    height: 260px;
+}
+.d6 div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+.da div {
+    position: absolute;
+    width: 234px;
+    height: 300px;
+}
+.dc div {
+    position: absolute;
+    width: 300px;
+    height: 285px;
+}
