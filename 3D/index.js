@@ -330,25 +330,25 @@ d6click = function(o) {
 }
 
 d4click = function (o) {
-    var rz2 = randDeg(6,4);
+    var rz2 = randDeg(4,12);
     var ry1 = randDeg(4,12);
     var rz1 = randDeg(4,12);
     switch (d(4)) {
     case 1: 
 	break;
     case 2:
-	rz2 += 180;
-	ry1 += -109.5;
+	rz2 += 300;
+	ry1 += 109.5;
+	rz1 += -120;
 	break;
     case 3:
-	rz2 += 180;
-	ry1 += -109.5;
+	rz2 += 60;
+	ry1 += 109.5;
 	rz1 += 120;
 	break;
     case 4:
 	rz2 += 180;
-	ry1 += -109.5;
-	rz1 += -120;
+	ry1 += 109.5;
 	break;
     }
     o.style.transform =

@@ -1,5 +1,5 @@
 .fa1 {
-    background-image: url("d10_1.png");
+    background-image: url("da1.png");
     transform:
       translate3d(183px,132px,0px)
       rotateX(48deg)
@@ -9,7 +9,7 @@
       translateY(150px)
 }
 .fa2 {
-    background-image: url("d10_2.png");
+    background-image: url("da2.png");
     transform:
       translate3d(183px,132px,0px)
       rotateX(228deg)
@@ -19,7 +19,7 @@
       translateY(150px)
 }
 .fa3 {
-    background-image: url("d10_3.png");
+    background-image: url("da3.png");
     transform:
       translate3d(183px,132px,0px)
       rotateX(48deg)
@@ -29,7 +29,7 @@
       translateY(150px)
 }
 .fa4 {
-    background-image: url("d10_4.png");
+    background-image: url("da4.png");
     transform:
       translate3d(183px,132px,0px)
       rotateX(228deg)
@@ -39,7 +39,7 @@
       translateY(150px)
 }
 .fa5 {
-    background-image: url("d10_5.png");
+    background-image: url("da5.png");
     transform:
       translate3d(183px,132px,0px)
       rotateX(48deg)
@@ -49,7 +49,7 @@
       translateY(150px)
 }
 .fa6 {
-    background-image: url("d10_6.png");
+    background-image: url("da6.png");
     transform:
       translate3d(183px,132px,0px)
       rotateX(228deg)
@@ -59,7 +59,7 @@
       translateY(150px)
 }
 .fa7 {
-    background-image: url("d10_7.png");
+    background-image: url("da7.png");
     transform:
       translate3d(183px,132px,0px)
       rotateX(48deg)
@@ -69,7 +69,7 @@
       translateY(150px)
 }
 .fa8 {
-    background-image: url("d10_8.png");
+    background-image: url("da8.png");
     transform:
       translate3d(183px,132px,0px)
       rotateX(228deg)
@@ -79,7 +79,7 @@
       translateY(150px)
 }
 .fa9 {
-    background-image: url("d10_9.png");
+    background-image: url("da9.png");
     transform:
       translate3d(183px,132px,0px)
       rotateX(48deg)
@@ -89,7 +89,7 @@
       translateY(150px)
 }
 .faa {
-    background-image: url("d10_10.png");
+    background-image: url("daa.png");
     transform:
       translate3d(183px,132px,0px)
       rotateX(228deg)
@@ -555,6 +555,7 @@
     transform:
       translate3d(150px,150px,0px)
       rotateX(-90deg)
+      rotateZ(-90deg)
       translateZ(150px);
 }
 .f63 {
@@ -562,6 +563,7 @@
     transform:
       translate3d(150px,150px,0px)
       rotateY(90deg)
+      rotateZ(90deg)
       translateZ(150px)
 }
 .f64 {
@@ -569,6 +571,7 @@
     transform:
       translate3d(150px,150px,0px)
       rotateY(-90deg)
+      rotateZ(180deg)
       translateZ(150px)
 }
 .f65 {
@@ -576,6 +579,7 @@
     transform:
       translate3d(150px,150px,0px)
       rotateX(90deg)
+      rotateZ(180deg)
       translateZ(150px);
 }
 .f66 {
@@ -583,47 +587,53 @@
     transform:
       translate3d(150px,150px,0px)
       translateZ(-150px)
+      rotateZ(90deg)
       rotateY(180deg)
 }
 
 .f41 {
     background-image: url("d41.png");
     transform:
-      translate3d(150px, 174px, 0px)
-      translateZ(-61px)
-      rotateY(180deg)
-      translateY(-44px) /* 130 - 86 */
+      translate3d(150px, 130px, 0px)
+      translateZ(61px)
 }
 .f42 {
     background-image: url("d42.png");
     transform:
-      translate3d(150px,174px,0px)
-      translateZ(-61px)
-      rotateZ(-60deg)
-      translateY(-86px)
-      rotateX(70.5deg)
+      translate3d(150px,130px,0px)
+      translateZ(61px)
+      translateY(44px)
+      rotateZ(120deg)
+      translateY(86px)
+      rotateX(-109.5deg) /* 180 - 70.5 */
       translateY(130px)
       rotateZ(180deg)
+      translateY(44px)
+      rotateZ(-120deg)
+      translateY(-44px)
 }
 .f43 {
     background-image: url("d43.png");
     transform:
-      translate3d(150px,174px,0px)
-      translateZ(-61px)
-      rotateZ(60deg)
-      translateY(-86px)
-      rotateX(70.5deg)
+      translate3d(150px,130px,0px)
+      translateZ(61px)
+      translateY(44px)
+      rotateZ(-120deg)
+      translateY(86px)
+      rotateX(-109.5deg) /* 180 - 70.5 */
       translateY(130px)
       rotateZ(180deg)
+      translateY(44px)
+      rotateZ(120deg)
+      translateY(-44px)
 }
 .f44 {
     background-image: url("d44.png");
     transform:
-      translate3d(150px,174px,0px)
-      translateZ(-61px)
-      rotateZ(180deg)
-      translateY(-86px)
-      rotateX(70.5deg)
+      translate3d(150px,130px,0px)
+      translateZ(61px)
+      translateY(130px)
+      rotateX(-109.5deg) /* 180 - 70.5 */
       translateY(130px)
       rotateZ(180deg)
 }
