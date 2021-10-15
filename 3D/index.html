@@ -1,124 +1,131 @@
 <html>
   <head>
     <link rel="stylesheet" href="index.css"/>
-  </head>
-  <style>
-    html, body, table {
-      padding: 0px; margin: 0px;
-    }
-    body { user-select: none; background-image: url('../flat/left.jpg'); }
+    <style>
+      html, body, table { padding: 0px; margin: 0px; width:100%; height:100% }
+      body { user-select: none; }
+      table { border-collapse: collapse; }
+      td.left { height: 100%; background-image: url('../flat/left.jpg'); }
+      td.right { padding: 0px; margin: 0px; width: 300px; background-image: url('../flat/right.jpg'); }
     </style>
-  <body>
-    <div style="flowat:left">
-      <div style="float:left;width:200;">
-	<div class="container" style="transform: scale(0.3)">
-	  <div class="dk" id="dk-1">
-	    <div class="fk1"></div>
-	    <div class="fk2"></div>
-	    <div class="fk3"></div>
-	    <div class="fk4"></div>
-	    <div class="fk5"></div>
-	    <div class="fk6"></div>
-	    <div class="fk7"></div>
-	    <div class="fk8"></div>
-	    <div class="fk9"></div>
-	    <div class="fka"></div>
-	    <div class="fkb"></div>
-	    <div class="fkc"></div>
-	    <div class="fkd"></div>
-	    <div class="fke"></div>
-	    <div class="fkf"></div>
-	    <div class="fkg"></div>
-	    <div class="fkh"></div>
-	    <div class="fki"></div>
-	    <div class="fkj"></div>
-	    <div class="fkk"></div>
-	  </div>
-	</div>
-      </div>
-    </div>
-    <div style="float:left;width:200;">
-      <div class="container" style="transform: scale(0.3);">
-	<div class="dc" id="dc-1">
-	  <div class="fc1"></div>
-	  <div class="fc2"></div>
-	  <div class="fc3"></div>
-	  <div class="fc4"></div>
-	  <div class="fc5"></div>
-	  <div class="fc6"></div>
-	  <div class="fc7"></div>
-	  <div class="fc8"></div>
-	  <div class="fc9"></div>
-	  <div class="fca"></div>
-	  <div class="fcb"></div>
-	  <div class="fcc"></div>
-	</div>
-      </div>
-    </div>
-    <div style="float:left;width:200;">
-      <div class="container" style="transform: scale(0.3);">
-	<div class="da" id="da-1">
-	  <div class="fa1"></div>
-	  <div class="fa2"></div>
-	  <div class="fa3"></div>
-	  <div class="fa4"></div>
-	  <div class="fa5"></div>
-	  <div class="fa6"></div>
-	  <div class="fa7"></div>
-	  <div class="fa8"></div>
-	  <div class="fa9"></div>
-	  <div class="faa"></div>
-	</div>
-      </div>
-    </div>
-    <div style="float:left;width:200;">
-      <div class="container" style="transform: scale(0.3);">
-	<div class="d8" id="d8-1">
-	  <div class="f81"></div>
-	  <div class="f82"></div>
-	  <div class="f83"></div>
-	  <div class="f84"></div>
-	  <div class="f85"></div>
-	  <div class="f86"></div>
-	  <div class="f87"></div>
-	  <div class="f88"></div>
-	</div>
-      </div>
-    </div>
-    <div style="float:left;width:200;">
-      <div class="container" style="transform: scale(0.3);">
-	<div class="d6" id="d6-1">
-	  <div class="f61"></div>
-	  <div class="f62"></div>
-	  <div class="f63"></div>
-	  <div class="f64"></div>
-	  <div class="f65"></div>
-	  <div class="f66"></div>
-	</div>
-      </div>
-    </div>
-    <div style="float:left;width:200;">
-      <div class="container" style="transform: scale(0.3);">
-	<div class="d6" id="d6-2">
-	  <div class="f61"></div>
-	  <div class="f62"></div>
-	  <div class="f63"></div>
-	  <div class="f64"></div>
-	  <div class="f65"></div>
-	  <div class="f66"></div>
-	</div>
-      </div>
-    </div>
-    <div style="float:left;width:200;">
-      <div class="container" style="transform: scale(0.3);">
-	<div class="d4" id="d4-1">
-	  <div class="f41"></div>
-	  <div class="f42"></div>
-	  <div class="f43"></div>
-	  <div class="f44"></div>
-	</div>
-      </div>
-    </div>
     <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body onload="prepare()">
+    <table>
+      <tr>
+	<td class="left">
+	  <div style="float:left;width:200;height:200px;">
+	    <div class="container">
+	      <div class="dk" id="dk-1">
+		<div class="fk1"></div>
+		<div class="fk2"></div>
+		<div class="fk3"></div>
+		<div class="fk4"></div>
+		<div class="fk5"></div>
+		<div class="fk6"></div>
+		<div class="fk7"></div>
+		<div class="fk8"></div>
+		<div class="fk9"></div>
+		<div class="fka"></div>
+		<div class="fkb"></div>
+		<div class="fkc"></div>
+		<div class="fkd"></div>
+		<div class="fke"></div>
+		<div class="fkf"></div>
+		<div class="fkg"></div>
+		<div class="fkh"></div>
+		<div class="fki"></div>
+		<div class="fkj"></div>
+		<div class="fkk"></div>
+	      </div>
+	    </div>
+	  </div>
+          <div style="float:left;width:200;height:200px;">
+	    <div class="container">
+	      <div class="dc" id="dc-1">
+		<div class="fc1"></div>
+		<div class="fc2"></div>
+		<div class="fc3"></div>
+		<div class="fc4"></div>
+		<div class="fc5"></div>
+		<div class="fc6"></div>
+		<div class="fc7"></div>
+		<div class="fc8"></div>
+		<div class="fc9"></div>
+		<div class="fca"></div>
+		<div class="fcb"></div>
+		<div class="fcc"></div>
+	      </div>
+	    </div>
+	  </div>
+	  <div style="float:left;width:200;height:200px;">
+	    <div class="container">
+	      <div class="da" id="da-1">
+		<div class="fa1"></div>
+		<div class="fa2"></div>
+		<div class="fa3"></div>
+		<div class="fa4"></div>
+		<div class="fa5"></div>
+		<div class="fa6"></div>
+		<div class="fa7"></div>
+		<div class="fa8"></div>
+		<div class="fa9"></div>
+		<div class="faa"></div>
+	      </div>
+	    </div>
+	  </div>
+	  <div style="float:left;width:200;height:200px">
+	    <div class="container">
+	      <div class="d8" id="d8-1">
+		<div class="f81"></div>
+		<div class="f82"></div>
+		<div class="f83"></div>
+		<div class="f84"></div>
+		<div class="f85"></div>
+		<div class="f86"></div>
+		<div class="f87"></div>
+		<div class="f88"></div>
+	      </div>
+	    </div>
+	  </div>
+	  <div style="float:left;width:200;height:200px;">
+	    <div class="container">
+	      <div class="d6" id="d6-1">
+		<div class="f61"></div>
+		<div class="f62"></div>
+		<div class="f63"></div>
+		<div class="f64"></div>
+		<div class="f65"></div>
+		<div class="f66"></div>
+	      </div>
+	    </div>
+	  </div>
+	  <div style="float:left;width:200;height:200px;">
+	    <div class="container">
+	      <div class="d6" id="d6-2">
+		<div class="y61"></div>
+		<div class="y62"></div>
+		<div class="y63"></div>
+		<div class="y64"></div>
+		<div class="y65"></div>
+		<div class="y66"></div>
+	      </div>
+	    </div>
+	  </div>
+	  <div style="float:left;width:200;height:200px;">
+	    <div class="container">
+	      <div class="d4" id="d4-1">
+		<div class="f41"></div>
+		<div class="f42"></div>
+		<div class="f43"></div>
+		<div class="f44"></div>
+	      </div>
+	    </div>
+	  </div>
+	</td>
+	<td class="right">
+	</td>
+      </tr>
+    </table>
   </body>
 </html>

@@ -591,6 +591,53 @@
       rotateY(180deg)
 }
 
+.y61 {
+    background-image: url("y61.png");
+    transform:
+      translate3d(150px,150px,0px)
+      translateZ(150px);
+}
+.y62 {
+    background-image: url("y62.png");
+    transform:
+      translate3d(150px,150px,0px)
+      rotateX(-90deg)
+      rotateZ(-90deg)
+      translateZ(150px);
+}
+.y63 {
+    background-image: url("y63.png");
+    transform:
+      translate3d(150px,150px,0px)
+      rotateY(90deg)
+      rotateZ(90deg)
+      translateZ(150px)
+}
+.y64 {
+    background-image: url("y64.png");
+    transform:
+      translate3d(150px,150px,0px)
+      rotateY(-90deg)
+      rotateZ(180deg)
+      translateZ(150px)
+}
+.y65 {
+    background-image: url("y65.png");
+    transform:
+      translate3d(150px,150px,0px)
+      rotateX(90deg)
+      rotateZ(180deg)
+      translateZ(150px);
+}
+.y66 {
+    background-image: url("y66.png");
+    transform:
+      translate3d(150px,150px,0px)
+      translateZ(-150px)
+      rotateZ(90deg)
+      rotateY(180deg)
+}
+
 .f41 {
     background-image: url("d41.png");
     transform:
@@ -639,9 +686,10 @@
 }
 
 .container {
+    float: left;
     width: 600px;
     height: 600px;
-    float: left;
+    transform: translate(-200px,-200px) scale(0.3);
 }
 
 .d4,.d6,.d8,.da,.dc,.dk {

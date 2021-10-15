@@ -28,11 +28,6 @@
       }
       function place(n, f) {
         var b = document.getElementById('left1');
-        for (var i = 2; i <= 4; i++) {
-          if (document.getElementById("left" + i).classList.contains("select")) {
-            b = document.getElementById("left" + i);
-          }
-        }
         var e = document.createElement("img");
         e.setAttribute("src", n + f + "_n.png");
         e.setAttribute("class", "left");
@@ -45,31 +40,23 @@
         });
         b.appendChild(e);
       }
-      function roll(id) {
-        var el = document.getElementById(id);
-        if (!el.classList.contains("select")) {
-          for (var i = 1; i <= 4; i++) {
-            document.getElementById("left" + i).classList.remove("select");
+      function roll() {
+        var el = document.getElementById("left1");
+        var dice = document.getElementById("left1").getElementsByTagName("img");
+        for (var i = 0; i < dice.length; i++) {
+          var f = dice[i].getAttribute("f");
+          var n = dice[i].getAttribute("n");
+          var r = 1;
+          if (f === "11") {
+            r = p5();
           }
-          el.classList.add("select");
-        }
-        else {
-          var dice = document.getElementById(id).getElementsByTagName("img");
-          for (var i = 0; i < dice.length; i++) {
-            var f = dice[i].getAttribute("f");
-            var n = dice[i].getAttribute("n");
-            var r = 1;
-            if (f === "11") {
-              r = p5();
-            }
-            else if (f === "13") {
-              r = p5() - p5();
-            }
-            else {
-              r = Math.floor(Math.random() * f) + 1;
-            }
-            dice[i].setAttribute("src", n  + f + "_" + r + ".png");
+          else if (f === "13") {
+            r = p5() - p5();
           }
+          else {
+            r = Math.floor(Math.random() * f) + 1;
+          }
+          dice[i].setAttribute("src", n  + f + "_" + r + ".png");
         }
       }
       function p5() {
@@ -93,28 +80,13 @@
       td.select { border: 5px ridge black; text-align: center; }
       img.right { display: inline-block; margin: 0px; padding: 5px; }
       img.left { display: inline-block; margin: 0px; padding: 5px; }
-      td.inner { width: 50%; height: 50%; background-image: url('left.jpg'); }
-      td.left { width: 75%; background-image: url('left.jpg'); }
-      td.right { padding: 0px; margin: 0px; width: 300px; background-image: url('right.jpg'); }      
+      td.left { height: 100%; background-image: url('left.jpg'); }
+      td.right { padding: 0px; margin: 0px; width: 300px; background-image: url('right.jpg'); }
     </style>
   </head>
   <table class="outer">
     <tr>
-      <td>
-        <table>
-          <tr>
-            <td class="inner" onclick="roll('left1')" id="left1">
-            </td>
-            <td class="inner" onclick="roll('left2')" id="left2">
-            </td>
-          </tr>
-          <tr>
-            <td class="inner" onclick="roll('left3')" id="left3">
-            </td>
-            <td class="inner" onclick="roll('left4')" id="left4">
-            </td>
-          </tr>
-        </table>
+      <td class="left" onclick="roll()" id="left1">
       </td>
       <td class="right">
         <img class="right" src="b13_n.png" onclick="place('b','13')"/>
