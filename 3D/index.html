@@ -6,17 +6,19 @@
       body { user-select: none; }
       table { border-collapse: collapse; }
       td.left { height: 100%; background-image: url('../flat/left.jpg'); }
-      td.right { padding: 0px; margin: 0px; width: 300px; background-image: url('../flat/right.jpg'); }
+      td.right { padding: 0px; margin: 0px; width: 400px; background-image: url('../flat/right.jpg'); }
     </style>
     <script type="text/javascript" src="index.js"></script>
   </head>
-  <body onload="prepare()">
+  <body>
     <table>
       <tr>
-	<td class="left">
-	  <div style="float:left;width:200;height:200px;">
+	<td class="left" ondrop="dropl(event)" ondragover="allowDrop(event)">
+	</td>
+	<td class="right" ondrop="dropr(event)" ondragover="allowDrop(event)">
+	  <div id="dk" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
 	    <div class="container">
-	      <div class="dk" id="dk-1">
+	      <div class="dk">
 		<div class="fk1"></div>
 		<div class="fk2"></div>
 		<div class="fk3"></div>
@@ -40,9 +42,9 @@
 	      </div>
 	    </div>
 	  </div>
-          <div style="float:left;width:200;height:200px;">
+	  <div id="dc" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
 	    <div class="container">
-	      <div class="dc" id="dc-1">
+	      <div class="dc">
 		<div class="fc1"></div>
 		<div class="fc2"></div>
 		<div class="fc3"></div>
@@ -58,9 +60,9 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div style="float:left;width:200;height:200px;">
+	  <div id="da" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
 	    <div class="container">
-	      <div class="da" id="da-1">
+	      <div class="da">
 		<div class="fa1"></div>
 		<div class="fa2"></div>
 		<div class="fa3"></div>
@@ -74,9 +76,9 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div style="float:left;width:200;height:200px">
+	  <div id="d8" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
 	    <div class="container">
-	      <div class="d8" id="d8-1">
+	      <div class="d8">
 		<div class="f81"></div>
 		<div class="f82"></div>
 		<div class="f83"></div>
@@ -88,9 +90,9 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div style="float:left;width:200;height:200px;">
+	  <div id="d6" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
 	    <div class="container">
-	      <div class="d6" id="d6-1">
+	      <div class="d6">
 		<div class="f61"></div>
 		<div class="f62"></div>
 		<div class="f63"></div>
@@ -100,9 +102,9 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div style="float:left;width:200;height:200px;">
+	  <div id="d6g" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
 	    <div class="container">
-	      <div class="d6" id="d6-2">
+	      <div class="d6">
 		<div class="y61"></div>
 		<div class="y62"></div>
 		<div class="y63"></div>
@@ -112,9 +114,9 @@
 	      </div>
 	    </div>
 	  </div>
-	  <div style="float:left;width:200;height:200px;">
+	  <div id="d4" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
 	    <div class="container">
-	      <div class="d4" id="d4-1">
+	      <div class="d4">
 		<div class="f41"></div>
 		<div class="f42"></div>
 		<div class="f43"></div>
@@ -122,8 +124,6 @@
 	      </div>
 	    </div>
 	  </div>
-	</td>
-	<td class="right">
 	</td>
       </tr>
     </table>
