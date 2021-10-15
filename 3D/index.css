@@ -1,104 +1,3 @@
-.fa1 {
-    background-image: url("da1.png");
-    transform:
-      translate3d(183px,132px,0px)
-      rotateX(48deg)
-      rotateZ(0deg)
-      translateZ(202px)
-      rotateX(-48deg)
-      translateY(150px)
-}
-.fa2 {
-    background-image: url("da2.png");
-    transform:
-      translate3d(183px,132px,0px)
-      rotateX(228deg)
-      rotateZ(-216deg)
-      translateZ(202px)
-      rotateX(-48deg)
-      translateY(150px)
-}
-.fa3 {
-    background-image: url("da3.png");
-    transform:
-      translate3d(183px,132px,0px)
-      rotateX(48deg)
-      rotateZ(216deg)
-      translateZ(202px)
-      rotateX(-48deg)
-      translateY(150px)
-}
-.fa4 {
-    background-image: url("da4.png");
-    transform:
-      translate3d(183px,132px,0px)
-      rotateX(228deg)
-      rotateZ(-72deg)
-      translateZ(202px)
-      rotateX(-48deg)
-      translateY(150px)
-}
-.fa5 {
-    background-image: url("da5.png");
-    transform:
-      translate3d(183px,132px,0px)
-      rotateX(48deg)
-      rotateZ(144deg)
-      translateZ(202px)
-      rotateX(-48deg)
-      translateY(150px)
-}
-.fa6 {
-    background-image: url("da6.png");
-    transform:
-      translate3d(183px,132px,0px)
-      rotateX(228deg)
-      rotateZ(-144deg)
-      translateZ(202px)
-      rotateX(-48deg)
-      translateY(150px)
-}
-.fa7 {
-    background-image: url("da7.png");
-    transform:
-      translate3d(183px,132px,0px)
-      rotateX(48deg)
-      rotateZ(288deg)
-      translateZ(202px)
-      rotateX(-48deg)
-      translateY(150px)
-}
-.fa8 {
-    background-image: url("da8.png");
-    transform:
-      translate3d(183px,132px,0px)
-      rotateX(228deg)
-      rotateZ(72deg)
-      translateZ(202px)
-      rotateX(-48deg)
-      translateY(150px)
-}
-.fa9 {
-    background-image: url("da9.png");
-    transform:
-      translate3d(183px,132px,0px)
-      rotateX(48deg)
-      rotateZ(72deg)
-      translateZ(202px)
-      rotateX(-48deg)
-      translateY(150px)
-}
-.faa {
-    background-image: url("daa.png");
-    transform:
-      translate3d(183px,132px,0px)
-      rotateX(228deg)
-      rotateZ(0deg)
-      translateZ(202px)
-      rotateX(-48deg)
-      translateY(150px)
-}
-
 .fk1 {
     background-image: url("dk1.png");
     transform:
@@ -323,6 +222,67 @@
       translateY(-43px) /* 130 - 87 */
 }
 
+.green div.fk1 {
+    background-image: url("yk1.png");
+}
+.green div.fk2 {
+    background-image: url("yk2.png");
+}
+.green div.fk3 {
+    background-image: url("yk3.png");
+}
+.green div.fk4 {
+    background-image: url("yk4.png");
+}
+.green div.fk5 {
+    background-image: url("yk5.png");
+}
+.green div.fk6 {
+    background-image: url("yk6.png");
+}
+.green div.fk7 {
+    background-image: url("yk7.png");
+}
+.green div.fk8 {
+    background-image: url("yk8.png");
+}
+.green div.fk9 {
+    background-image: url("yk9.png");
+}
+.green div.fka {
+    background-image: url("yka.png");
+}
+.green div.fkb {
+    background-image: url("ykb.png");
+}
+.green div.fkc {
+    background-image: url("ykc.png");
+}
+.green div.fkd {
+    background-image: url("ykd.png");
+}
+.green div.fke {
+    background-image: url("yke.png");
+}
+.green div.fkf {
+    background-image: url("ykf.png");
+}
+.green div.fkg {
+    background-image: url("ykg.png");
+}
+.green div.fkh {
+    background-image: url("ykh.png");
+}
+.green div.fki {
+    background-image: url("yki.png");
+}
+.green div.fkj {
+    background-image: url("ykj.png");
+}
+.green div.fkk {
+    background-image: url("ykk.png");
+}
+
 .fc1 { /* side = 185.414 */
     background-image: url("dc1.png");
     transform:
@@ -462,6 +422,175 @@
       translateY(-15px) /* 285/2 - 127.56 */
 }
 
+.green div.fc1 {
+    background-image: url("yc1.png");
+}
+.green div.fc2 {
+    background-image: url("yc2.png");
+}
+.green div.fc3 {
+    background-image: url("yc3.png");
+}
+.green div.fc4 {
+    background-image: url("yc4.png");
+}
+.green div.fc5 {
+    background-image: url("yc5.png");
+}
+.green div.fc6 {
+    background-image: url("yc6.png");
+}
+.green div.fc7 {
+    background-image: url("yc7.png");
+}
+.green div.fc8 {
+    background-image: url("yc8.png");
+}
+.green div.fc9 {
+    background-image: url("yc9.png");
+}
+.green div.fca {
+    background-image: url("yca.png");
+}
+.green div.fcb {
+    background-image: url("ycb.png");
+}
+.green div.fcc {
+    background-image: url("ycc.png");
+}
+
+.fa1 {
+    background-image: url("da1.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(48deg)
+      rotateZ(0deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa2 {
+    background-image: url("da2.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(228deg)
+      rotateZ(-216deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa3 {
+    background-image: url("da3.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(48deg)
+      rotateZ(216deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa4 {
+    background-image: url("da4.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(228deg)
+      rotateZ(-72deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa5 {
+    background-image: url("da5.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(48deg)
+      rotateZ(144deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa6 {
+    background-image: url("da6.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(228deg)
+      rotateZ(-144deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa7 {
+    background-image: url("da7.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(48deg)
+      rotateZ(288deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa8 {
+    background-image: url("da8.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(228deg)
+      rotateZ(72deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.fa9 {
+    background-image: url("da9.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(48deg)
+      rotateZ(72deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+.faa {
+    background-image: url("daa.png");
+    transform:
+      translate3d(183px,132px,0px)
+      rotateX(228deg)
+      rotateZ(0deg)
+      translateZ(202px)
+      rotateX(-48deg)
+      translateY(150px)
+}
+
+.green div.fa1 {
+    background-image: url("ya1.png");
+}
+.green div.fa2 {
+    background-image: url("ya2.png");
+}
+.green div.fa3 {
+    background-image: url("ya3.png");
+}
+.green div.fa4 {
+    background-image: url("ya4.png");
+}
+.green div.fa5 {
+    background-image: url("ya5.png");
+}
+.green div.fa6 {
+    background-image: url("ya6.png");
+}
+.green div.fa7 {
+    background-image: url("ya7.png");
+}
+.green div.fa8 {
+    background-image: url("ya8.png");
+}
+.green div.fa9 {
+    background-image: url("ya9.png");
+}
+.green div.faa {
+    background-image: url("yaa.png");
+}
+
 .f81 {
     background-image: url("d81.png");
     transform:
@@ -544,6 +673,31 @@
 
 }
 
+.green div.f81 {
+    background-image: url("y81.png");
+}
+.green div.f82 {
+    background-image: url("y82.png");
+}
+.green div.f83 {
+    background-image: url("y83.png");
+}
+.green div.f84 {
+    background-image: url("y84.png");
+}
+.green div.f85 {
+    background-image: url("y85.png");
+}
+.green div.f86 {
+    background-image: url("y86.png");
+}
+.green div.f87 {
+    background-image: url("y87.png");
+}
+.green div.f88 {
+    background-image: url("y88.png");
+}
+
 .f61 {
     background-image: url("d61.png");
     transform:
@@ -591,51 +745,23 @@
       rotateY(180deg)
 }
 
-.y61 {
+.green div.f61 {
     background-image: url("y61.png");
-    transform:
-      translate3d(150px,150px,0px)
-      translateZ(150px);
 }
-.y62 {
+.green div.f62 {
     background-image: url("y62.png");
-    transform:
-      translate3d(150px,150px,0px)
-      rotateX(-90deg)
-      rotateZ(-90deg)
-      translateZ(150px);
 }
-.y63 {
+.green div.f63 {
     background-image: url("y63.png");
-    transform:
-      translate3d(150px,150px,0px)
-      rotateY(90deg)
-      rotateZ(90deg)
-      translateZ(150px)
 }
-.y64 {
+.green div.f64 {
     background-image: url("y64.png");
-    transform:
-      translate3d(150px,150px,0px)
-      rotateY(-90deg)
-      rotateZ(180deg)
-      translateZ(150px)
 }
-.y65 {
+.green div.f65 {
     background-image: url("y65.png");
-    transform:
-      translate3d(150px,150px,0px)
-      rotateX(90deg)
-      rotateZ(180deg)
-      translateZ(150px);
 }
-.y66 {
+.green div.f66 {
     background-image: url("y66.png");
-    transform:
-      translate3d(150px,150px,0px)
-      translateZ(-150px)
-      rotateZ(90deg)
-      rotateY(180deg)
 }
 
 .f41 {
@@ -683,6 +809,19 @@
       rotateX(-109.5deg) /* 180 - 70.5 */
       translateY(130px)
       rotateZ(180deg)
+}
+
+.green div.f41 {
+    background-image: url("y41.png");
+}
+.green div.f42 {
+    background-image: url("y42.png");
+}
+.green div.f43 {
+    background-image: url("y43.png");
+}
+.green div.f44 {
+    background-image: url("y44.png");
 }
 
 .container {
