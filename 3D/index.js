@@ -28,6 +28,23 @@ function d(d) {
     return Math.floor(Math.random() * d) + 1;
 }
 
+function m() {
+    var r = 0;
+    while (true) {
+        if (Math.floor(Math.random() * 5) == 0) {
+            break;
+        }
+        r++;
+    }
+    while (true) {
+        if (Math.floor(Math.random() * 5) == 0) {
+            break;
+        }
+        r--;
+    }
+    return r;
+}
+
 function randDeg() {
     return (2 + d(4)) * 360;
 }
@@ -47,7 +64,89 @@ function roll(el) {
 	dcclick(child); break;
     case "dk":
 	dkclick(child); break;
+    case "dm":
+	dmclick(child); break;
     }
+}
+
+function rot(deg) {
+    return '% { transform: translate3d(189px,176px,0px) rotateY(' + deg + 'deg) translateZ(304px) } ';
+}
+
+// from and to are positions
+function move(from, to) {
+    var ret = '';
+    if (from <= -3) {
+        ret += 0 + rot(-90);
+        if (to <= -3) {
+            ret += 100 + rot(-90);
+        }
+        if (to > -3 && to < 3) {
+            ret += ((-2.25 - from)/(to - from) * 100) + rot(-90);
+            ret += 100 + rot(to * 40);
+        }
+        if (to >= 3) {
+            ret += ((-2.25 - from)/(to - from) * 100) + rot(-90);
+            ret += ((0 - from)/(to - from) * 100) + rot(0);
+            ret += ((2.25 - from)/(to - from) * 100) + rot(90);
+            ret += 100 + rot(90);
+        }
+    }
+    if (from > -3 && from < 3) {
+        ret += 0 + rot(from * 40);
+        if (to <= -3) {
+            ret += ((-2.25 - from)/(to - from) * 100) + rot(-90);
+            ret += 100 + rot(-90);
+        }
+        if (to > -3 && to < 3) {
+            ret += 100 + rot(to * 40);
+        }
+        if (to >= 3) {
+            ret += ((2.25 - from)/(to - from) * 100) + rot(90);
+            ret += 100 + rot(90);
+        }
+    }
+    if (from >= 3) {
+        ret += 0 + rot(90);
+        if (to <= -3) {
+            ret += ((2.25 - from)/(to - from) * 100) + rot(90);
+            ret += ((0 - from)/(to - from) * 100) + rot(0);
+            ret += ((-2.25 - from)/(to - from) * 100) + rot(-90);
+            ret += 100 + rot(-90);
+        }
+        if (to > -3 && to < 3) {
+            ret += ((2.25 - from)/(to - from) * 100) + rot(90);
+            ret += 100 + rot(to * 40);
+        }
+        if (to >= 3) {
+            ret += 100 + rot(90);
+        }
+    }
+    return ret;
+}
+
+dmclick = function(o) {
+    var od = o.od ? o.od : 0;
+    var nd = Math.min(11,Math.max(-11,m()));
+
+    for (var i = Math.min(od,nd) - 2; i <= Math.max(od,nd) + 2; i++) {
+        var el = o.getElementsByClassName('pm' + i)[0];
+        el.style.backgroundImage = 'url("dpm' + i + '.png")';
+        el.style.transform = null;
+        el.style.animation = null;
+        var style = document.createElement("style");
+        var innerHTML = '@keyframes pmfrom' + i + 'to' + (i + nd - od) + ' { ';
+        // i is a dice value. od was on position 0, nd will be on position 0.
+        innerHTML += move(i - od, i - nd);
+        innerHTML += '}';
+        style.innerHTML = innerHTML;
+        o.appendChild(style);
+        el.style.animation =
+            'pmfrom' + i + 'to' + (i + nd - od) + ' 1s linear 0s 1 normal';
+        el.style.animationFillMode = "forwards";
+    }
+    o.offsetWidth;
+    o.od = nd;
 }
 
 dkclick = function(o) {
