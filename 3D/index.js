@@ -65,7 +65,7 @@ function roll(el) {
     case "dk":
 	dkclick(child); break;
     case "dm":
-	dmclick(child); break;
+	dmclick(child,el.id.substr(2,1)); break;
     }
 }
 
@@ -125,13 +125,13 @@ function move(from, to) {
     return ret;
 }
 
-dmclick = function(o) {
+dmclick = function(o,l) {
     var od = o.od ? o.od : 0;
-    var nd = Math.min(11,Math.max(-11,m()));
+    var nd = Math.min(33,Math.max(-33,m()));
 
     for (var i = Math.min(od,nd) - 2; i <= Math.max(od,nd) + 2; i++) {
         var el = o.getElementsByClassName('pm' + i)[0];
-        el.style.backgroundImage = 'url("dpm' + i + '.png")';
+        el.style.backgroundImage = 'url("' + l + 'pm' + i + '.png")';
         el.style.transform = null;
         el.style.animation = null;
         var style = document.createElement("style");
