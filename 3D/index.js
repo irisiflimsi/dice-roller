@@ -5,37 +5,59 @@ function load() {
         for (var j = -35; j <= 35; j++) {
             innerHTML += '@keyframes pmfrom' + i + 'to' + j + ' { '
                 + move(i, j)
-                + '}';
+                + '} ';
         }
     }
     style.innerHTML = innerHTML;
     document.body.appendChild(style);
+    for (let k = 0; k < localStorage.length; k++) {
+        var kk = localStorage.key(k);
+        var el = document.getElementById(kk.substring(0,kk.indexOf("-"))).cloneNode(true);
+        el.id = kk;
+        el.style = "position:absolute;width:200;height:200px;"
+        el.style.top = parseInt(localStorage.getItem(el.id).slice(0,4));
+        el.style.left = parseInt(localStorage.getItem(el.id).slice(4,8));
+        el.onclick = function() { roll(el); }
+        document.getElementById("left").appendChild(el);
+    }
 }
 
 function allowDrop(ev) {
     ev.preventDefault();
 }
 
+// Only one drag possible; globally
+var dragX;
+var dragY;
 function drag(ev) {
     ev.dataTransfer.setData('text', ev.target.id);
+    dragX = ev.clientX - ev.target.getBoundingClientRect().x;
+    dragY = ev.clientY - ev.target.getBoundingClientRect().y;
 }
 
 function dropl(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData('text');
+    var el = document.getElementById(data);
     if (data.length < 5) {
-        var el = document.getElementById(data).cloneNode(true);
+        el = el.cloneNode(true);
         el.id += "-" + Date.now();
-        el.onclick = function() { roll(el); }
-        ev.target.appendChild(el);
     }
+    el.style = "position:absolute;width:200;height:200px;"
+    el.style.top = event.clientY - dragY;
+    el.style.left = event.clientX - dragX;
+    el.onclick = function() { roll(el); }
+    ev.target.appendChild(el);
+    localStorage[el.id] = ("000" + el.style.top).slice(-6,-2) + ("000" + el.style.left).slice(-6,-2);
 }
 
 function dropr(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData('text');
-    if (data.length > 4)
+    if (data.length > 4) {
         document.getElementById(data).remove();
+        localStorage.removeItem(data);
+    }
 }
 
 function d(d) {

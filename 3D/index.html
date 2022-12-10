@@ -5,7 +5,7 @@
       html, body, table { padding: 0px; margin: 0px; width:100%; height:100% }
       body { user-select: none; }
       table { border-collapse: collapse; }
-      td.left { height: 100%; background-image: url('../flat/left.jpg'); }
+      td.left { position: relative; height: 100%; background-image: url('../flat/left.jpg'); }
       td.right { padding: 0px; margin: 0px; width: 400px; background-image: url('../flat/right.jpg'); }
     </style>
     <script type="text/javascript" src="index.js"></script>
@@ -13,7 +13,7 @@
   <body onload="load()">
     <table>
       <tr>
-        <td class="left" ondrop="dropl(event)" ondragover="allowDrop(event)">
+        <td id="left" class="left" ondrop="dropl(event)" ondragover="allowDrop(event)">
         </td>
         <td class="right" ondrop="dropr(event)" ondragover="allowDrop(event)">
           <div id="dmd" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
