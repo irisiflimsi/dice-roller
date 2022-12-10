@@ -13,8 +13,12 @@ function load() {
     for (let k = 0; k < localStorage.length; k++) {
         var kk = localStorage.key(k);
         var el = document.getElementById(kk.substring(0,kk.indexOf("-"))).cloneNode(true);
+        if (el === undefined) {
+            localStorage.removeItem(kk);
+            continue;
+        }
         el.id = kk;
-        el.style = "position:absolute;width:200;height:200px;"
+        el.style = "position:absolute;width:200px;height:200px;"
         el.style.top = parseInt(localStorage.getItem(el.id).slice(0,4));
         el.style.left = parseInt(localStorage.getItem(el.id).slice(4,8));
         el.onclick = function() { roll(el); }
