@@ -21,7 +21,7 @@ function load() {
         el.style = "position:absolute;width:200px;height:200px;"
         el.style.top = parseInt(localStorage.getItem(el.id).slice(0,4));
         el.style.left = parseInt(localStorage.getItem(el.id).slice(4,8));
-        el.onclick = function() { roll(el); }
+        el.onclick = function() { roll(this); }
         document.getElementById("left").appendChild(el);
     }
 }
@@ -50,7 +50,7 @@ function dropl(ev) {
     el.style = "position:absolute;width:200;height:200px;"
     el.style.top = event.clientY - dragY;
     el.style.left = event.clientX - dragX;
-    el.onclick = function() { roll(el); }
+    el.onclick = function() { roll(this); }
     ev.target.appendChild(el);
     localStorage[el.id] = ("000" + el.style.top).slice(-6,-2) + ("000" + el.style.left).slice(-6,-2);
 }
