@@ -51,7 +51,7 @@ function dropl(ev) {
     el.style.top = event.clientY - dragY;
     el.style.left = event.clientX - dragX;
     el.onclick = function() { roll(this); }
-    ev.target.appendChild(el);
+    document.getElementById("left").appendChild(el);
     localStorage[el.id] = ("000" + el.style.top).slice(-6,-2) + ("000" + el.style.left).slice(-6,-2);
 }
 
