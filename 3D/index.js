@@ -12,11 +12,11 @@ function load() {
     document.body.appendChild(style);
     for (let k = 0; k < localStorage.length; k++) {
         var kk = localStorage.key(k);
-        var el = document.getElementById(kk.substring(0,kk.indexOf("-"))).cloneNode(true);
-        if (el === undefined) {
-            localStorage.removeItem(kk);
-            continue;
-        }
+        var kki = kk.indexOf("-");
+        if (kki < 0) { localStorage.removeItem(kk); continue; }
+        var base = document.getElementById(kk.substring(0,kki));
+        if (base === undefined) { localStorage.removeItem(kk); continue; }
+        var el = base.cloneNode(true);
         el.id = kk;
         el.style = "position:absolute;width:200px;height:200px;"
         el.style.top = parseInt(localStorage.getItem(el.id).slice(0,4));
