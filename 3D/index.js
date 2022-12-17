@@ -162,11 +162,13 @@ function move(from, to) {
 dmclick = function(o,l) {
     var od = o.od ? o.od : 0;
     var nd = Math.min(33,Math.max(-33,m()));
+    var style = "";
+    for (var i = Math.min(od,nd) - 2; i <= Math.max(od,nd) + 2; i++)
+        style += '@keyframes pmfrom' + (i - od) + 'to' + (i - nd) + ' { ' + move(i - od, i - nd) + '} ';
+    document.getElementById('keyframe').innerHtml = style;
     for (var i = Math.min(od,nd) - 2; i <= Math.max(od,nd) + 2; i++) {
         var el = o.getElementsByClassName('pm' + i)[0];
         el.style.backgroundImage = 'url("' + l + 'pm' + i + '.png")';
-        var style = document.getElementById('keyframe');
-        style.innerHTML = '@keyframes pmfrom' + (i - od) + 'to' + (i - nd) + ' { ' + move(i - od, i - nd) + '} ';
         el.style.animation = 'pmfrom' + (i - od) + 'to' + (i - nd) + ' 1s linear 0s 1 normal';
         el.style.animationFillMode = "both";
         o.replaceChild(el.cloneNode(true), el);
