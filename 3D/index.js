@@ -2,6 +2,11 @@ function load() {
     var style = document.createElement("style");
     style.id = "keyframe";
     document.body.appendChild(style);
+    var inner = "";
+    for (var i = -35; i <= 35; i++)
+	for (var j = -35; j <= 35; j++)
+            inner += '@keyframes pmfrom' + i + 'to' + j + ' { ' + move(i, j) + '} ';
+    document.getElementById('keyframe').innerHTML = inner;
     for (let k = 0; k < localStorage.length; k++) {
         var kk = localStorage.key(k);
         var kki = kk.indexOf("-");
@@ -162,10 +167,6 @@ function move(from, to) {
 dmclick = function(o,l) {
     var od = o.od ? o.od : 0;
     var nd = Math.min(33,Math.max(-33,m()));
-    var style = "";
-    for (var i = Math.min(od,nd) - 2; i <= Math.max(od,nd) + 2; i++)
-        style += '@keyframes pmfrom' + (i - od) + 'to' + (i - nd) + ' { ' + move(i - od, i - nd) + '} ';
-    document.getElementById('keyframe').innerHtml = style;
     for (var i = Math.min(od,nd) - 2; i <= Math.max(od,nd) + 2; i++) {
         var el = o.getElementsByClassName('pm' + i)[0];
         el.style.backgroundImage = 'url("' + l + 'pm' + i + '.png")';
