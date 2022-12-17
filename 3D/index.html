@@ -5,8 +5,8 @@
       html, body, table { padding: 0; margin: 0; min-width:100%; min-height:100%; max-width:100%; max-height:100%; overflow: hidden }
       body { user-select: none; }
       table { border-collapse: collapse; }
-      td.left { position: relative; height: 100%; background-image: url('../flat/left.jpg'); }
-      td.right { padding: 0px; margin: 0px; width: 400px; background-image: url('../flat/right.jpg'); }
+      td.left { height: 100%; background: url('../flat/left.jpg') repeat; background-size: contain; }
+      td.right { width: 300px; background: url('../flat/right.jpg')repeat; background-size: contain; }
     </style>
     <script type="text/javascript" src="index.js"></script>
   </head>
@@ -16,7 +16,7 @@
         <td id="left" class="left" ondrop="dropl(event)" ondragover="allowDrop(event)">
         </td>
         <td class="right" ondrop="dropr(event)" ondragover="allowDrop(event)">
-          <div id="dmd" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="dmd" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
               <div class="dm blue" style="scale: .7">
                 <div class="pm-35"></div><div class="pm-34"></div><div class="pm-33"></div><div class="pm-32"></div><div class="pm-31"></div>
@@ -37,7 +37,7 @@
               </div>
             </div>
           </div>
-          <div id="dmy" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="dmy" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
               <div class="dm green" style="scale: .7">
                 <div class="pm-35"></div><div class="pm-34"></div><div class="pm-33"></div><div class="pm-32"></div><div class="pm-31"></div>
@@ -58,9 +58,9 @@
               </div>
             </div>
           </div>
-          <div id="dk" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="dk" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="dk blue" style="scale: .75">
+              <div class="dk blue" style="scale: 1">
                 <div class="fk1"></div><div class="fk2"></div>
                 <div class="fk3"></div><div class="fk4"></div>
                 <div class="fk5"></div><div class="fk6"></div>
@@ -74,9 +74,9 @@
               </div>
             </div>
           </div>
-          <div id="dkg" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="dkg" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="dk green" style="scale: .75">
+              <div class="dk green" style="scale: 1">
                 <div class="fk1"></div><div class="fk2"></div>
                 <div class="fk3"></div><div class="fk4"></div>
                 <div class="fk5"></div><div class="fk6"></div>
@@ -90,9 +90,9 @@
               </div>
             </div>
           </div>
-          <div id="dc" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="dc" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="dc blue" style="scale: .8">
+              <div class="dc blue" style="scale: 1">
                 <div class="fc1"></div><div class="fc2"></div>
                 <div class="fc3"></div><div class="fc4"></div>
                 <div class="fc5"></div><div class="fc6"></div>
@@ -102,9 +102,9 @@
               </div>
             </div>
           </div>
-          <div id="dcg" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="dcg" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="dc green" style="scale: .8">
+              <div class="dc green" style="scale: 1">
                 <div class="fc1"></div><div class="fc2"></div>
                 <div class="fc3"></div><div class="fc4"></div>
                 <div class="fc5"></div><div class="fc6"></div>
@@ -114,9 +114,9 @@
               </div>
             </div>
           </div>
-          <div id="da" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="da" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="da blue" style="scale: .9">
+              <div class="da blue" style="scale: 1.25">
                 <div class="fa1"></div><div class="fa2"></div>
                 <div class="fa3"></div><div class="fa4"></div>
                 <div class="fa5"></div><div class="fa6"></div>
@@ -125,9 +125,9 @@
               </div>
             </div>
           </div>
-          <div id="dag" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="dag" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="da green" style="scale: .9">
+              <div class="da green" style="scale: 1.25">
                 <div class="fa1"></div><div class="fa2"></div>
                 <div class="fa3"></div><div class="fa4"></div>
                 <div class="fa5"></div><div class="fa6"></div>
@@ -136,9 +136,9 @@
               </div>
             </div>
           </div>
-          <div id="d8" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="d8" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="d8 blue" style="scale: 1">
+              <div class="d8 blue" style="scale: 1.35">
                 <div class="f81"></div><div class="f82"></div>
                 <div class="f83"></div><div class="f84"></div>
                 <div class="f85"></div><div class="f86"></div>
@@ -146,9 +146,9 @@
               </div>
             </div>
           </div>
-          <div id="d8g" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="d8g" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="d8 green" style="scale: 1">
+              <div class="d8 green" style="scale: 1.35">
                 <div class="f81"></div><div class="f82"></div>
                 <div class="f83"></div><div class="f84"></div>
                 <div class="f85"></div><div class="f86"></div>
@@ -156,35 +156,35 @@
               </div>
             </div>
           </div>
-          <div id="d6" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="d6" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="d6 blue" style="scale: .85">
+              <div class="d6 blue" style="scale: 1.25">
                 <div class="f61"></div><div class="f62"></div>
                 <div class="f63"></div><div class="f64"></div>
                 <div class="f65"></div><div class="f66"></div>
               </div>
             </div>
           </div>
-          <div id="d6g" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="d6g" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="d6 green" style="scale: .85">
+              <div class="d6 green" style="scale: 1.25">
                 <div class="f61"></div><div class="f62"></div>
                 <div class="f63"></div><div class="f64"></div>
                 <div class="f65"></div><div class="f66"></div>
               </div>
             </div>
           </div>
-          <div id="d4" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="d4" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="d4 blue" style="scale: 1">
+              <div class="d4 blue" style="scale: 1.5">
                 <div class="f41"></div><div class="f42"></div>
                 <div class="f43"></div><div class="f44"></div>
               </div>
             </div>
           </div>
-          <div id="d4g" draggable="true" ondragstart="drag(event)" style="float:left;width:200;height:200px;">
+          <div id="d4g" draggable="true" ondragstart="drag(event)" class="die">
             <div class="container">
-              <div class="d4 green" style="scale: 1">
+              <div class="d4 green" style="scale: 1.5">
                 <div class="f41"></div><div class="f42"></div>
                 <div class="f43"></div><div class="f44"></div>
               </div>

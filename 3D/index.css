@@ -876,10 +876,15 @@
 }
 
 .container {
-    float: left;
     width: 600px;
     height: 600px;
-    transform: translate(-200px,-200px) scale(0.3);
+    transform: translate(-300px,-300px) scale(0.2) translate(300px,300px);
+}
+
+.die {
+    float: left;
+    width: 120px;
+    height: 120px;
 }
 
 .dm,.d4,.d6,.d8,.da,.dc,.dk {
@@ -887,7 +892,6 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 1s ease 0s;
-    -webkit-transition: -webkit-transform 1s ease 0s;
     margin: 0px;
 }
 

@@ -1,14 +1,6 @@
 function load() {
     var style = document.createElement("style");
-    var innerHTML; // local is better than DOM directly.
-    for (var i = -35; i <= 35; i++) {
-        for (var j = -35; j <= 35; j++) {
-            innerHTML += '@keyframes pmfrom' + i + 'to' + j + ' { '
-                + move(i, j)
-                + '} ';
-        }
-    }
-    style.innerHTML = innerHTML;
+    style.id = "keyframe";
     document.body.appendChild(style);
     for (let k = 0; k < localStorage.length; k++) {
         var kk = localStorage.key(k);
@@ -18,7 +10,8 @@ function load() {
         if (base === undefined) { localStorage.removeItem(kk); continue; }
         var el = base.cloneNode(true);
         el.id = kk;
-        el.style = "position:absolute;width:200px;height:200px;"
+	el.className = "die";
+        el.style.position = "absolute";
         el.style.top = parseInt(localStorage.getItem(el.id).slice(0,4));
         el.style.left = parseInt(localStorage.getItem(el.id).slice(4,8));
         el.onclick = function() { roll(this); }
@@ -47,7 +40,8 @@ function dropl(ev) {
         el = el.cloneNode(true);
         el.id += "-" + Date.now();
     }
-    el.style = "position:absolute;width:200;height:200px;"
+    el.className = "die";
+    el.style.position = "absolute";
     el.style.top = event.clientY - dragY;
     el.style.left = event.clientX - dragX;
     el.onclick = function() { roll(this); }
@@ -171,6 +165,8 @@ dmclick = function(o,l) {
     for (var i = Math.min(od,nd) - 2; i <= Math.max(od,nd) + 2; i++) {
         var el = o.getElementsByClassName('pm' + i)[0];
         el.style.backgroundImage = 'url("' + l + 'pm' + i + '.png")';
+        var style = document.getElementById('keyframe');
+        style.innerHTML = '@keyframes pmfrom' + (i - od) + 'to' + (i - nd) + ' { ' + move(i - od, i - nd) + '} ';
         el.style.animation = 'pmfrom' + (i - od) + 'to' + (i - nd) + ' 1s linear 0s 1 normal';
         el.style.animationFillMode = "both";
         o.replaceChild(el.cloneNode(true), el);
